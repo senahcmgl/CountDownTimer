@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.senahocamoglu.timerdemo.MainActivity">
+
+    <SeekBar
+        android:id="@+id/timeSeekBar"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/timeSeekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:text="00:30"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/timeText"
+        android:layout_alignLeft="@+id/timeText"
+        android:layout_alignRight="@+id/timeText"
+        android:layout_alignStart="@+id/timeText"
+        android:layout_below="@+id/timeText"
+        android:layout_marginTop="87dp"
+        android:onClick="startTimer"
+        android:text="Start/Stop" />
+
+</RelativeLayout>
